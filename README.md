@@ -1,6 +1,6 @@
 # Rewards4Passion Nigeria Ltd
 
-Corporate website for **Rewards4Passion Nigeria Ltd**, a Nigerian business providing procurement, escrow support, shipping and consignment, outsourcing, and general consultation.
+Portable static-export source for the Rewards4Passion Nigeria Ltd corporate website.
 
 ## Pages
 
@@ -9,41 +9,28 @@ Corporate website for **Rewards4Passion Nigeria Ltd**, a Nigerian business provi
 - Services
 - Contact Us
 
-## Technology
+## Run locally
 
-- React 19
-- Next.js-compatible Vinext
-- TypeScript
-- Tailwind CSS
-- Lucide icons
-
-## Local setup
-
-### Requirements
-
-- Node.js 22.13 or newer
-- npm
-- Linux or Windows Subsystem for Linux for the bundled build scripts
-
-### Run locally
+Requirements: Node.js 22.13 or newer and npm.
 
 ```bash
-npm ci
+npm install
 npm run dev
 ```
 
-### Production build
+## Create the static website
 
 ```bash
 npm run build
 ```
 
-## Important source folders
+The completed static website is written to the `out/` directory. Upload the contents of `out/` to any static hosting provider.
 
-- `app/` — website pages and styling
-- `components/` — navigation, footer and reusable UI
+## Main source folders
+
+- `app/` — pages and styling
+- `components/` — navigation and footer
 - `public/images/` — website imagery
-- `public/favicon.svg` — website icon
 
 ## Business contact
 
