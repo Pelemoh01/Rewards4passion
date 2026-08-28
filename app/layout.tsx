@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const assetPrefix = process.env.GITHUB_ACTIONS === "true" ? "/Rewards4passion" : "";
+
 export const metadata: Metadata = {
   title: {
     default: "Rewards4Passion Nigeria Ltd",
@@ -9,8 +11,8 @@ export const metadata: Metadata = {
   description:
     "Procurement, escrow support, shipping and consignment, outsourcing, and business consultation in Nigeria.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${assetPrefix}/favicon.svg`,
+    shortcut: `${assetPrefix}/favicon.svg`,
   },
 };
 

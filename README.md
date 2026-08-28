@@ -14,7 +14,7 @@ Portable static-export source for the Rewards4Passion Nigeria Ltd corporate webs
 Requirements: Node.js 22.13 or newer and npm.
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -26,7 +26,7 @@ npm run build
 
 The completed static website is written to the `out/` directory. Upload the contents of `out/` to any static hosting provider.
 
-The included GitHub Actions workflow automatically builds and publishes the site to GitHub Pages after changes are pushed to `main`.
+The included GitHub Actions workflow automatically builds and publishes the site to GitHub Pages after changes are pushed to `main`. In **Settings → Pages**, keep the publishing source set to **GitHub Actions** so it does not compete with GitHub's legacy branch-based Pages workflow.
 
 ## Main source folders
 

@@ -34,7 +34,12 @@ export function SiteHeader({ active }: { active: string }) {
           <Brand />
           <nav className="desktop-nav" aria-label="Primary navigation">
             {nav.map((item) => (
-              <Link className={active === item.key ? "active" : ""} href={item.href} key={item.key}>
+              <Link
+                aria-current={active === item.key ? "page" : undefined}
+                className={active === item.key ? "active" : ""}
+                href={item.href}
+                key={item.key}
+              >
                 {item.label}
               </Link>
             ))}
@@ -43,7 +48,12 @@ export function SiteHeader({ active }: { active: string }) {
         </div>
         <nav className="mobile-nav container" aria-label="Mobile navigation">
           {nav.map((item) => (
-            <Link className={active === item.key ? "active" : ""} href={item.href} key={item.key}>
+            <Link
+              aria-current={active === item.key ? "page" : undefined}
+              className={active === item.key ? "active" : ""}
+              href={item.href}
+              key={item.key}
+            >
               {item.label}
             </Link>
           ))}
@@ -79,7 +89,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} Rewards4Passion Nigeria Ltd.</span>
+        <span>© Rewards4Passion Nigeria Ltd.</span>
         <span>Built on trust. Driven by delivery.</span>
       </div>
     </footer>
