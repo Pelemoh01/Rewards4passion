@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import {
   ArrowRight,
   BriefcaseBusiness,
@@ -8,6 +9,7 @@ import {
   Ship,
 } from "lucide-react";
 import { SiteFooter, SiteHeader } from "@/components/site-shell";
+import operationsImage from "@/public/images/rewards4passion-operations.png";
 
 const services = [
   {
@@ -42,7 +44,10 @@ export default function Home() {
     <div className="site-page">
       <SiteHeader active="home" />
       <main>
-        <section className="hero hero-home">
+        <section
+          className="hero hero-home"
+          style={{ "--hero-image": `url(${operationsImage.src})` } as CSSProperties}
+        >
           <div className="hero-glow" aria-hidden="true" />
           <div className="container hero-grid">
             <div className="hero-copy">

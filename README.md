@@ -26,6 +26,8 @@ npm run build
 
 The completed static website is written to the `out/` directory. Upload the contents of `out/` to any static hosting provider.
 
+The included GitHub Actions workflow automatically builds and publishes the site to GitHub Pages after changes are pushed to `main`.
+
 ## Main source folders
 
 - `app/` — pages and styling
